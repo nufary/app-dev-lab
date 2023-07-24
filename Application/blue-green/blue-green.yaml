@@ -13,4 +13,7 @@ spec:
   alternateBackends:
   - kind: Service
     name: user1-hello-world
-    weight: 7
+    weight: 8
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
