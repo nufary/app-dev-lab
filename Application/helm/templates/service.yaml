@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
 # set your user name
-  name: {{ .Release.Name }}-service
+  name: '{{ .Release.Name }}-service'
 spec:
   ports:
     - protocol: TCP
