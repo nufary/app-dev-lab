@@ -32,7 +32,7 @@ spec:
           - name: index-html
             mountPath: /tmp/html # this will mount the html.index file to it application location
 # update with the image you build in part 1
-          image: {{ .Values.containers.image }}: {{ .Values.containers.tag }}
+          image: '{{ .Values.containers.image }}:{{ .Values.containers.tag }}'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:
